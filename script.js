@@ -32,13 +32,13 @@ for(let i=0;i<5;i++){
     survivors.push(new Survivor(names[Math.floor(Math.random()*names.length)],probs[Math.floor(Math.random()*probs.length)],probs[Math.floor(Math.random()*probs.length)],probs[Math.floor(Math.random()*probs.length)]));
 }
 jason = new Killer("Jason",100);
-
-while(jason.hp>0 && dead.length<5){
+//probleme avec la boucle
+/*while(jason.hp>0 && dead.length<5){
     jason.attack(survivors[Math.floor(Math.random()*survivors.length)]);
     if(dead.length==5){
         alive=false;
     }
-}
+}*/
 if(dead.length==5){
     console.log(`les survivants ont gagnés`);
     for(let i=0;dead.length;i++){
